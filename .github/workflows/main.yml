@@ -1,21 +1,14 @@
-# A simple workflow to demonstrate a custom step name.
-name: CI
+name: CI Workflow
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push events but only for the "main" branch
   push:
     branches: [ "main" ]
-  
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
   test:
-    runs-on: ubuntu-latest   # Runner environment
+    runs-on: ubuntu-latest   # Required to specify a runner
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      
-      - name: Custom Step - Greeting
-        run: echo "Hello, world! 23f3001596@ds.study.iitm.ac.in"
+      - name: 23f3001596@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+
